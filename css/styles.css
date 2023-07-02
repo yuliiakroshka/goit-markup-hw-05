@@ -158,7 +158,7 @@ nav {
 }
 .nav-link {
   position: relative;
-  padding: 0;
+  padding: 24px 0;
   color: #404bbf;
   display: flex;
   justify-content: center;
@@ -286,7 +286,7 @@ nav {
   max-height: 112px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: var(--cloud, #f4f4fd);
+  /*background: var(--cloud, #f4f4fd);*/
 }
 .benefits-icon {
   fill: currentColor;
@@ -294,7 +294,7 @@ nav {
 .benefits-list {
   display: flex;
   justify-content: center;
-  row-gap: 24px;
+  /*row-gap: 24px;*/
 }
 .benefits-icon-box {
   display: flex;
@@ -302,8 +302,9 @@ nav {
   align-items: center;
   margin-bottom: 8px;
   height: 112px;
-  background-color: #f4f4fd;
+  background-color: var(--cloud, #f4f4fd);
   border-radius: 4px;
+  row-gap: 24px;
 }
 
 /*Section 3*/
@@ -461,7 +462,7 @@ width:156px*/
   padding: 100px 0;
 }
 .footer-text {
-  color: #f4f4fd;
+  color: var(--cloud, #f4f4fd);
   letter-spacing: 0.02em;
   max-width: 264px;
 }
@@ -480,30 +481,32 @@ width:156px*/
 }
 .footer .container {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 17px;
   align-items: baseline;
 }
 .container-footer-link {
-  display: flex;
+  display: inline-block;
   justify-content: flex-start;
   align-items: center;
-  max-width: 208px;
+  min-width: 208px;
 }
 .media-text {
-  display: block;
   color: var(--white, #fff);
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
+  min-width: 96px;
   margin-bottom: 16px;
-  max-width: 264px;
 }
 .container-logo-text {
   margin-right: 120px;
 }
 .footer .messenger-list {
-  display: flex;
-  gap: 16px;
+  display: inline-flex;
+  /* justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 16px;*/
 }
 .footer-messenger-link {
   display: flex;
@@ -522,6 +525,52 @@ width:156px*/
 .footer-messenger-link:hover,
 .footer-messenger-link:focus {
   background-color: #31d0aa;
+}
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--white, #fff);
+}
+.form {
+  display: flex;
+  gap: 24px;
+}
+.input-e-mail {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: var(--white, #fff);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+}
+.E-mail {
+  color: var(--white, #fff);
+}
+.subscribe-btn {
+  display: inline-flex;
+  height: 40px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+}
+.icon-submit-btn {
+  fill: var(--white, #fff);
+  stroke: var(--white, #fff);
+  margin-left: 16px;
 }
 /*Portfolio*/
 
@@ -600,12 +649,6 @@ width:156px*/
   justify-content: center;
   margin-bottom: 72px;
 }
-/*.list-row div {
-  border-top: none;
-  padding: 32px 16px;
-   border: 1px solid #e7e9fc;
-  font-weight: 500;
-}*/
 .div-row {
   border-top: none;
   padding: 32px 16px;
