@@ -526,64 +526,7 @@ width:156px*/
 .footer-messenger-link:focus {
   background-color: #31d0aa;
 }
-.subscribe-text {
-  margin-bottom: 16px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--white, #fff);
-}
-.form {
-  display: flex;
-  gap: 24px;
-}
-.input-e-mail {
-  width: 264px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid var(--white, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  color: var(--white, #fff);
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  line-height: 1.5;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-.E-mail {
-  color: var(--white, #fff);
-}
-.subscribe-btn {
-  display: inline-flex;
-  height: 40px;
-  color: var(--white, #fff);
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  border: none;
-  border-radius: 4px;
-  background: var(--iris, #4d5ae5);
-  min-width: 165px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.icon-submit-btn {
-  fill: var(--white, #fff);
-  margin-left: 16px;
-}
-.modal-icon-name {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 /*Portfolio*/
 
 .buttons {
@@ -790,7 +733,7 @@ width:156px*/
 .div-modal-form {
   margin-bottom: 8px;
 }
-.label-name {
+.label-modal {
   display: block;
   font-size: 12px;
   line-height: 1.17;
@@ -798,7 +741,7 @@ width:156px*/
   color: var(--lightslate, #8e8f99);
   margin-bottom: 4px;
 }
-.div-name-form {
+.div-input-form {
   position: relative;
 }
 .input-user-name {
@@ -809,7 +752,92 @@ width:156px*/
   background: transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 .input-user-name:hover {
-  border: 1px solid var(--iris, #4d5ae5);
+  border-color: var(--iris, #4d5ae5);
+}
+.subscribe-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--white, #fff);
+}
+.form {
+  display: flex;
+  gap: 24px;
+}
+.input-e-mail {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: var(--white, #fff);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  line-height: 1.5;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.E-mail {
+  color: var(--white, #fff);
+}
+.subscribe-btn {
+  display: inline-flex;
+  height: 40px;
+  color: var(--white, #fff);
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  min-width: 165px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.icon-submit-btn {
+  fill: var(--white, #fff);
+  margin-left: 16px;
+}
+.modal-icon-input {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon-name:hover {
+  fill: var(--iris, #4d5ae5);
+}
+.div-comment {
+  margin-bottom: 16px;
+}
+.send-btn {
+  display: block;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border: none;
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white, #fff);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
