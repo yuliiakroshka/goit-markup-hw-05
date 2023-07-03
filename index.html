@@ -612,7 +612,6 @@ UI Designer"
           </div>
           <div class="div-checkbox">
             <input
-              class="input-checkbox"
               class="visually-hidden"
               type="checkbox"
               name="user-privacy"
@@ -620,10 +619,14 @@ UI Designer"
               value="true"
             />
             <label class="label-checkbox" for="user-privacy">
-              I accept the terms and conditions of the<span
-                class="span-checkbox"
-              ></span
-            ></label>
+              I accept the terms and conditions of the
+              <span class="span-checkbox">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              <a class="link-checkbox">Privacy Policy</a>
+            </label>
           </div>
           <button class="send-btn">Send</button>
         </form>
