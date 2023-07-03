@@ -888,6 +888,6 @@ width:156px*/
 .link-checkbox {
   color: var(--iris, #4d5ae5);
 }
-.visually-hidden:checked .span-checkbox {
+.span-checkbox input:checked {
   background-color: var(--ocean, #404bbf);
 }
