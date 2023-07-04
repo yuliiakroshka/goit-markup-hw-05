@@ -504,9 +504,6 @@ width:156px*/
 }
 .footer .messenger-list {
   display: inline-flex;
-  /* justify-content: flex-start;
-  align-items: flex-start;
-  row-gap: 16px;*/
 }
 .footer-messenger-link {
   display: flex;
@@ -757,7 +754,15 @@ width:156px*/
 .input-user-name:focus {
   border-color: var(--iris, #4d5ae5);
 }
+.subscribe-div {
+  display: inline-flex;
+  max-width: 453px;
+  height: 80px;
+  flex-shrink: 0;
+  align-items: center;
+}
 .subscribe-text {
+  display: inline-flex;
   margin-bottom: 16px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -816,7 +821,7 @@ width:156px*/
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input:focus .modal-icon-name {
+input:focus .modal-icon-input {
   fill: var(--iris, #4d5ae5);
 }
 .div-comment {
@@ -889,7 +894,7 @@ input:focus .modal-icon-name {
 .link-checkbox {
   color: var(--iris, #4d5ae5);
 }
-input:checked .span-checkbox {
+input-checkbox:checked + .label-checkbox .span-checkbox {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud, #f4f4fd);
