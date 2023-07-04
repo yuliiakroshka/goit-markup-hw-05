@@ -890,4 +890,6 @@ width:156px*/
 }
 .span-checkbox input:checked {
   background-color: var(--ocean, #404bbf);
+  border: none;
+  fill: var(--cloud, #f4f4fd);
 }
