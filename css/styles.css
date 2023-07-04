@@ -824,8 +824,8 @@ input:focus .modal-icon-name {
 }
 .send-btn {
   display: block;
-  padding: 16px 32px;
   align-items: flex-start;
+  padding: 16px 32px;
   gap: 10px;
   border: none;
   border-radius: 4px;
@@ -889,8 +889,11 @@ input:focus .modal-icon-name {
 .link-checkbox {
   color: var(--iris, #4d5ae5);
 }
-input:checked .link-checkbox {
+input:checked .span-checkbox {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud, #f4f4fd);
+}
+.icon-default {
+  fill: var(--navyblue, #2e2f4266);
 }
