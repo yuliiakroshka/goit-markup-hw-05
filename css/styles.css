@@ -896,7 +896,7 @@ width:156px*/
 .link-checkbox {
   color: var(--iris, #4d5ae5);
 }
-input-checkbox:checked + .label-checkbox .span-checkbox {
+input-checkbox:checked + .span-checkbox {
   background-color: var(--ocean, #404bbf);
   border: none;
   fill: var(--cloud, #f4f4fd);
